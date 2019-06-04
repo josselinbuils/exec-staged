@@ -18,6 +18,6 @@ exec-staged 'command' 'regex-filter'
 Example of npm script:
 ```json
 {
-  "prettier:staged": "exec-staged 'prettier --write' '.*\\.js$'",
+  "prettier:staged": "exec-staged 'prettier --write' '.*\\.js$'"
 }
 ```
