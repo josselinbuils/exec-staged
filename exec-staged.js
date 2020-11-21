@@ -12,7 +12,7 @@ try {
 
 for (const { regex, commands } of config) {
   for (const command of commands) {
-    const execCommand = `LIST=\`git diff-index --cached --name-only --diff-filter=d HEAD | grep -E "${regex}"\`; if [ "$LIST" ]; then echo ${command} $LIST; ${command} $LIST; fi`;
+    const execCommand = `LIST=\`git diff-index --cached --name-only --diff-filter=d HEAD | grep -E "${regex.source}"\`; if [ "$LIST" ]; then echo ${command} $LIST; ${command} $LIST; fi`;
 
     try {
       childProcess.execSync(execCommand, {

@@ -1,6 +1,6 @@
 {
   "name": "@josselinbuils/exec-staged",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zero dependency lib to exec commands on staged files.",
   "repository": {
     "type": "git",
