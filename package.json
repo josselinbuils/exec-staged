@@ -1,6 +1,6 @@
 {
   "name": "@josselinbuils/exec-staged",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Zero dependency lib to exec commands on staged files.",
   "repository": {
     "type": "git",
@@ -9,11 +9,14 @@
   "homepage": "https://github.com/josselinbuils/exec-staged/#readme",
   "license": "MIT",
   "bin": {
-    "exec-staged": "./index.js"
+    "exec-staged": "./exec-staged.js.js"
   },
+  "files": [
+    "exec-staged.js"
+  ],
   "dependencies": {},
-  "devDependencies": {},
-  "prettier": {
-    "singleQuote": true
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "^2.2.0"
   }
 }
